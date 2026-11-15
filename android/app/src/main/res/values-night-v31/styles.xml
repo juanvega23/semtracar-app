@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- El calificador -night tiene mas precedencia que -v31, asi que en modo
+         oscuro sobre Android 12+ hace falta repetir aqui el fondo del splash;
+         si no, values-night/styles.xml gana y el arranque sale negro. -->
+    <style name="LaunchTheme" parent="@android:style/Theme.Black.NoTitleBar">
+        <item name="android:windowBackground">@drawable/launch_background</item>
+        <item name="android:windowSplashScreenBackground">@color/ic_launcher_background</item>
+    </style>
+</resources>
